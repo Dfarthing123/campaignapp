@@ -12,6 +12,7 @@ Note: a
     .model({
       name:a.string(),
       description: a.string(),
+      task: a.string(),
       image: a.string(),
     })
     .authorization((allow) => [allow.owner()]),

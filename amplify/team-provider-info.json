@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-campaignapp-dev-c2d2e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::230213608818:role/amplify-campaignapp-dev-c2d2e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::230213608818:role/amplify-campaignapp-dev-c2d2e-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-campaignapp-dev-c2d2e-deployment",
+      "UnauthRoleName": "amplify-campaignapp-dev-c2d2e-unauthRole",
+      "StackName": "amplify-campaignapp-dev-c2d2e",
+      "StackId": "arn:aws:cloudformation:us-west-1:230213608818:stack/amplify-campaignapp-dev-c2d2e/5b7c9950-6712-11f0-95d7-02d0ee6da099",
+      "AmplifyAppId": "dlmi80j2s9ne1"
+    },
+    "categories": {
+      "api": {
+        "campaignapp": {}
+      }
+    }
+  }
+}

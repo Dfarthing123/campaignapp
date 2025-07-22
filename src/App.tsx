@@ -8,16 +8,13 @@ import './index.css';
 Amplify.configure(amplifyOutputs);
 
 import Dashboard from './pages/dashboard';
+import Profile from './pages/profile';
+import Notes from './pages/notes';
 
 
-
-
-function Profile() {
-  return <h2>Profile</h2>;
-}
-function Settings() {
-  return <h2>Settings</h2>;
-}
+//function Profile() {
+//  return <h2>Profile</h2>;
+//}
 
 function MainApp() {
   const { user, signOut } = useAuthenticator(context => [context.user]);
@@ -45,7 +42,7 @@ function MainApp() {
           >
             <Link style={linkStyle} to="/dashboard">Dashboard</Link>
             <Link style={linkStyle} to="/profile">Profile</Link>
-            <Link style={linkStyle} to="/settings">Settings</Link>
+            <Link style={linkStyle} to="/notes">Notes</Link>
           </nav>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <p style={{ margin: 0 }}>Welcome, {user?.userId}!</p>
@@ -70,7 +67,7 @@ function MainApp() {
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/settings" element={<Settings />} />
+            <Route path="/notes" element={<Notes />} />
           </Routes>
         </main>
       </div>
